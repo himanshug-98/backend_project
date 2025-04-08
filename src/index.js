@@ -2,6 +2,7 @@
 
 import dotevn from "dotenv";
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 dotevn.config({
   pah: "./env",
@@ -15,18 +16,8 @@ connectDB()
     });
   })
   .catch((err) => {
-    console.log("Mongo DB connection failed !!!", err);
+    console.log("Mongo DB connection failed !!", err);
   });
-
-
-
-
-
-
-
-
-
-  
 
 /*  first approach to connect database
 
